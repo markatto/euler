@@ -31,4 +31,5 @@ def largest_prime_factor(x):
         if x % prime == 0:
             return prime
 
-print(largest_prime_factor(600851475143))
+if __name__ == "__main__":
+    print(largest_prime_factor(600851475143))
