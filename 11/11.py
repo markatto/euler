@@ -1,5 +1,4 @@
 #! /usr/bin/env python3
-import sys
 import operator
 import functools
 import itertools
