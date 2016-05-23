@@ -1,0 +1,11 @@
+Basically, you need to go down n times and right n times, where n is the side length of the grid.
+
+for smaller n, you can solve it numerically like this:
+import itertools
+n = 2
+print(len(set(itertools.permutations(['r'] * n + ['d'] * n))))
+
+That obviously doesn't work for 20 though, you end up calculating 40! permutations. You could simulate actually walking the grid and it's actually computable, but I remembered from high school math that there's a formula for exactly this kind of problem: https://en.wikipedia.org/wiki/Permutation#Permutations_of_multisets
+You don't really need to write code for this, google calculator can do it for you:
+40! / (20! * 20!)
+
